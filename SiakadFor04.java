@@ -20,9 +20,18 @@ public class SiakadFor04 {
             if (grade < lowest) {
                 lowest = grade;
             }
-
-            
+  if (grade >= 60) {
+                pass++;
+            } else {
+                fail++;
+            }
         }
-
+ 
+        System.out.println("The highest grade: " + highest);
+        System.out.println("The lowest grade: " + lowest);
+        System.out.println("Number of students who passed: " + pass);
+        System.out.println("Number of students who failed: " + fail);
     }
 }
+            
+    
