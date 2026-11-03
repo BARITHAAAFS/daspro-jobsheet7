@@ -16,11 +16,12 @@ public class SiakadWhile4 {
 
             if (grade < 0 || grade > 100) {
                 System.out.println("Invalid grade. Re-enter a valid grade!");
-                continue; 
+                continue; // lewati sisa loop, i tidak bertambah -> mahasiswa yang sama diminta input ulang
             }
 
             if (grade > 80 && grade <= 100) {
                 System.out.println("The grade of the " + (i + 1) + " student is A");
+                System.out.println("Good, keep the grade"); 
             } else if (grade > 73 && grade <= 80) {
                 System.out.println("The grade of the " + (i + 1) + " student is B+");
             } else if (grade > 65 && grade <= 73) {
@@ -35,7 +36,7 @@ public class SiakadWhile4 {
                 System.out.println("The grade of the " + (i + 1) + " student is E");
             }
 
-            i++; 
+            i++; // update counter di akhir loop
         }
     }
 }
